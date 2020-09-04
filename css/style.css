@@ -40,23 +40,41 @@ a {
 }
 
 .wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+  .wrapper {
     display: flex;
+  }
+}
+
+@media(min-width: 1200px) {
+  .wrapper {
     width: 1200px;
     padding: 50px 50px;
-    /*height: 100vh;*/
-    margin: 0 auto;
+  }
 }
 
 .page-header {
   position: relative;
-    width: 50%;
-    height: 100%;
+    width: 100%;
 } 
+
+@media(min-width: 768px) {
+  .page-header {
+    width: 50%;
+    height: auto;
+    background-image: url(../img/bg-grad.png);
+    background-size: contain;
+  }
+}
 
 .page-header__logo {
     position: absolute;
-    top: 30px;
-    left: 40px;
+    top: 5%;
+    left: 5%;
 }
 
 .page-header__bg {
@@ -65,38 +83,83 @@ a {
 }
 
 .page-main {
-  width: 50%;
+  width: 100%;
   position: relative;
+  background-color: #FFFFFF;
 }
 
+@media(min-width: 768px) {
+  .page-main {
+    width: 50%;
+  }
+}
+
+
 .registration {
-    padding: 90px 65px 84px;
+    padding: 20px 15px;
     background-color: #FFFFFF;
+}
+
+@media(min-width: 1200px) {
+  .registration {
+    padding: 90px 65px 84px;
+  }
 }
 
 .registration__title {
     margin: 0;
     font-weight: normal;
     font-size: 24px;
+    text-align: center;
+}
+
+@media(min-width: 1200px) {
+  .registration__title {
+    text-align: left;
+  }
 }
 
 .registration__info {
     color: #7B8A92;
+    text-align: center;
     margin-bottom: 45px;
 }
 
+@media(min-width: 1200px) {
+  .registration__info {
+    text-align: left;
+  }
+}
+
 .button-wrapper {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+  .button-wrapper {
+    flex-direction: row;
     margin-bottom: 30px;
     justify-content: space-between;
+  }
+}
+
+@media(min-width: 1200px) {
+  .button-wrapper {
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
 }
 
 .registration__btn {
     display: inline-block;
     position: relative;
     margin-bottom: 10px;
-    padding: 11px 45px;
-    width: 47%;
+    padding: 11px 0;
+    width: 70%;
     box-sizing: border-box;
     border: none;
     font: inherit;
@@ -106,6 +169,13 @@ a {
     color: #ffffff;
   }
 
+  @media(min-width: 768px) {
+    .registration__btn {
+      width: 47%;
+    }
+  }
+
+  
   .registration__btn--fb {
     background-color: #255a9b;
   } 
@@ -117,8 +187,9 @@ a {
   .registration__btn--fb::before {
       content: "";
       position: absolute;
-      top: 9px;
+      top: 50%;
       left: 9px;
+      transform: translateY(-50%);
       width: 15px;
       height: 15px;
       background-image: url("../img/facebook.svg");
@@ -127,8 +198,9 @@ a {
   .registration__btn--in::after {
     content: "";
     position: absolute;
-    top: 9px;
-    left: 10px;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
     width: 15px;
     height: 15px;
     background-image: url("../img/linkedin.svg");
@@ -174,10 +246,18 @@ a {
 
   .input-group {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
       margin: 0;
       padding: 0;
       border: none;
+  }
+
+  @media(min-width: 1200px) {
+    .input-group {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   .input-wrapper {
@@ -185,10 +265,17 @@ a {
       display: flex;
       flex-direction: column-reverse;
       align-items: flex-start;
-      width: 47%;
+      width: 70%;
+      margin-bottom: 10px;
       padding: 3px 0 5px 5px;
       box-sizing: border-box;
       border: 1px solid #afafaf;
+  }
+
+  @media(min-width: 1200px) {
+    .input-wrapper {
+      width: 47%;
+    }
   }
 
   .form__label {
@@ -217,37 +304,67 @@ a {
 .form__fieldset {
   border: none;
   margin: 0; 
-  margin-top: 45px;
+  margin-top: 35px;
   padding: 0;
 
 }
 
 .form__legend {
+  text-align: center;
   padding: 0;
     font-weight: bold;
     font-size: 16px;
 }
 
+@media(min-width: 1200px) {
+  .form__legend {
+    text-align: left;
+  }
+}
+
 .form__intro {
     margin-bottom: 30px;
+    text-align: center;
     font-size: 12px;
+}
+
+@media(min-width: 1200px) {
+  .form__intro {
+    text-align: left;
+  }
 }
 
 .form__list {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     font-weight: bold;
 }
+
+@media(min-width: 500px) {
+  .form__list {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
 
 .form__label-radio {
     position: relative;
 }
 
 .list__item {
+    margin-bottom: 10px;
     padding-left: 20px;
+}
+
+@media(min-width: 1200px) {
+  .list__item {
+    margin-bottom: 0;
+  }
 }
 
 .form__label-radio::before {
@@ -272,7 +389,6 @@ a {
   font-weight: normal;
   color: #AFAFAF;
   margin-left: 4px;
-  
 }
   
 .form__label-radio::after {
@@ -288,8 +404,21 @@ a {
 }  
 
 .form__agreement {
-  margin-top: 90px;
+  margin-top: 5px;
   padding-left: 20px;
+}
+
+@media(min-width: 500px) {
+  .form__agreement {
+    margin-top: 80px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .form__agreement {
+    margin-top: 90px;
+    padding-left: 20px;
+  }
 }
 
 .form__label-checkbox {
@@ -322,21 +451,28 @@ a {
 }
 
 .form__submit {
-  display: inline-block;
+  display: block;
   position: relative;
-  padding: 11px 50px;
+  margin: 0 auto;
   margin-top: 48px;
-  width: 47%;
+  padding: 11px 35px;
+  width: 70%;
   box-sizing: border-box;
   border: none;
   border-radius: 3px;
   font: inherit;
   font-size: 0.8em;
   text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #3698FB;
   outline: none;
+}
+
+@media(min-width: 1200px) {
+  .form__submit {
+    width: 47%;
+    padding: 11px 50px;
+  }
 }
 
 .form__submit:hover,
@@ -350,14 +486,31 @@ a {
 
 .modal {
   position: absolute;
-  bottom: 195px;
-  left: 125px;
-  width: 230px;
+  bottom: 20%;
+  right: 10%;
+  width: 190px;
+  z-index: 2;
   box-shadow: 
     3px 3px 7px 2px #EEEEEE,
     -1px -1px 7px 2px #EEEEEE;
   font-size: 12px;
   color:  #96A5B1;
+  background-color: #FFFFFF;
+}
+
+@media(min-width: 500px) {
+  .modal {
+    bottom: 17%;
+    right: 30%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .modal {
+    bottom: 27%;
+    right: 30%;
+    width: 230px;
+  }
 }
 
 .modal__description {
