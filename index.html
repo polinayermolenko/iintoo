@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>iintoo - Registration</title>
+    <link href="style.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head>
+<body>
+    <div class="wrapper">
+    <header class="page-header">
+        <img class="page-header__logo" width="110" height="auto" src="./img/logo.svg" alt="Логотип">
+        <img class="page-header__bg" src="./img/bg.jpg" alt="Логотип">
+      </header>
+    <main class="page-main">
+      <section class="registration">
+        <h1 class="registration__title">Get iintoo it today</h1>
+            <p class="registration__info">There is no charge or obligation upon registration.</p>
+            <div class="button-wrapper">
+              <a class="registration__btn registration__btn--fb" href="#">Register with Facebook</a>
+              <a class="registration__btn registration__btn--in" href="#">Register with LinkedIn</a>
+            </div>
+            <span class="registration__option">or</span>
+            <form class="registration__form form" method="post" action="#">
+              <fieldset class="form__fieldset">
+            <div class="input-group">
+              <div class="input-wrapper">
+                <input class="form__input" type="email" id="email" name="email">
+                <label class="form__label" for="email">Email</label>
+              </div>
+              <div class="input-wrapper">
+                <input class="form__input" type="tel" id="tel" name="phone">
+                <label class="form__label" for="tel">Phone</label>
+              </div>
+            </div>
+             </fieldset>
+             <fieldset class="form__fieldset">
+            <legend class="form__legend">What type of investor are you?</legend>
+            <p class="form__intro">Select the type of investor you are below.</p>
+            <ul class="form__list list">
+            <li class="list__item">
+              <input class="visually-hidden form__radio" type="radio" id="individual" name="investor" checked="checked">
+              <label class="form__label-radio" for="individual">Individual</label>
+              <span class="form__info">i</span>
+            </li>
+            <li class="list__item">
+              <input class="visually-hidden form__radio" type="radio" id="business" name="investor">
+              <label class="form__label-radio" for="business">Business</label>
+              <span class="form__info">i</span>
+            </li>
+            <li class="list__item">
+              <input class="visually-hidden form__radio" type="radio" id="ira" name="investor">
+              <label class="form__label-radio" for="ira">IRA</label>
+              <span class="form__info">i</span>
+            </li>
+            <li class="list__item">
+              <input class="visually-hidden form__radio" type="radio" id="trust" name="investor">
+              <label class="form__label-radio" for="trust">Trust</label>
+              <span class="form__info">i</span>
+            </li>
+            </ul>
+             </fieldset>
+            <div class="form__agreement">
+              <input class="visually-hidden form__checkbox" type="checkbox" id="agree" name="agree">
+              <label class="form__label-checkbox" for="agree">I agree to the terms and receiving notifications from iintoo</label>
+              <a class="form__ref" href="#">View full terms</a>         
+            </div>
+       <button class="form__submit" type="submit">Create Account</button>
+        </form>
+      </section>
+      <section class="visually-hidden modal">
+       <p class="modal__description">
+       I am a natural person investing on my own behalf as a sole owner, joint tenant, or a tenant in common. 
+       </p>
+      </section>
+    </main>
+  </div>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
