@@ -1,0 +1,25 @@
+.page-header {
+    position: relative;
+      width: 100%;
+  } 
+  
+  @media(min-width: $tablet) {
+    .page-header {
+      width: 50%;
+      height: auto;
+      background-image: url(../img/bg-grad.png);
+      background-size: contain;
+    }
+  }
+  
+  .page-header__logo {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+  }
+  
+  .page-header__bg {
+    width: 100%;
+    height: auto;
+  }
+  

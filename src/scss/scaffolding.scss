@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Regular.woff2') format('woff2'),
+         url('../fonts/Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow-Bold.woff2') format('woff2'),
+         url('../fonts/Barlow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    font-family: "Barlow", "Helvetica", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #2A4A5C;
+    background-color: #EFF6FF;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .visually-hidden {
+    position: absolute; 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }

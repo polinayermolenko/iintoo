@@ -1,3 +1,5 @@
+import "../scss/style.scss";
+
 const infoIcons = document.querySelectorAll(".form__label-radio");
 const modal = document.querySelector(".modal");
 

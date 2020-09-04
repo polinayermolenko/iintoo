@@ -1,0 +1,10 @@
+.list__item {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+@media(min-width: $desktop) {
+  .list__item {
+    margin-bottom: 0;
+  }
+}

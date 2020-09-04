@@ -1,0 +1,17 @@
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 3px 0 5px 5px;
+    box-sizing: border-box;
+    border: 1px solid #afafaf;
+}
+
+@media(min-width: $desktop) {
+  .input-wrapper {
+    width: 47%;
+  }
+}

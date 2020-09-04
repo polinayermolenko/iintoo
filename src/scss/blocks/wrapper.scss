@@ -1,0 +1,17 @@
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media(min-width: $tablet) {
+  .wrapper {
+    display: flex;
+  }
+}
+
+@media(min-width: $desktop) {
+  .wrapper {
+    width: 1200px;
+    padding: 50px 50px;
+  }
+}
