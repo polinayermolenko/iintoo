@@ -8,27 +8,28 @@
 <link href="style.css" rel="stylesheet"></head>
 <body>
     <div class="wrapper">
-    <header class="page-header">
-        <img class="page-header__logo" width="110" height="auto" src="./img/logo.svg" alt="Логотип">
-        <img class="page-header__bg" src="./img/bg.jpg" alt="Логотип">
+    <header class="header">
+      <a class="logo">
+        <img class="logo__img" width="110" height="70" src="./img/logo.svg" alt="Логотип">
+      </a>
       </header>
-    <main class="page-main">
+    <main class="main">
       <section class="registration">
         <h1 class="registration__title">Get iintoo it today</h1>
             <p class="registration__info">There is no charge or obligation upon registration.</p>
-            <div class="button-wrapper">
+            <div class="registration__wrapper">
               <a class="registration__btn registration__btn--fb" href="#">Register with Facebook</a>
               <a class="registration__btn registration__btn--in" href="#">Register with LinkedIn</a>
             </div>
             <span class="registration__option">or</span>
             <form class="registration__form form" method="post" action="#">
               <fieldset class="form__fieldset">
-            <div class="input-group">
-              <div class="input-wrapper">
+            <div class="form__input-group">
+              <div class="form__input-wrapper input-wrapper">
                 <input class="form__input" type="email" id="email" name="email">
                 <label class="form__label" for="email">Email</label>
               </div>
-              <div class="input-wrapper">
+              <div class="form__input-wrapper input-wrapper">
                 <input class="form__input" type="tel" id="tel" name="phone">
                 <label class="form__label" for="tel">Phone</label>
               </div>
@@ -40,22 +41,22 @@
             <ul class="form__list list">
             <li class="list__item">
               <input class="visually-hidden form__radio" type="radio" id="individual" name="investor" checked="checked">
-              <label class="form__label-radio" for="individual">Individual</label>
+              <label class="form__label-radio" id="ind" for="individual">Individual</label>
               <span class="form__info">i</span>
             </li>
             <li class="list__item">
               <input class="visually-hidden form__radio" type="radio" id="business" name="investor">
-              <label class="form__label-radio" for="business">Business</label>
+              <label class="form__label-radio" id="bus" for="business">Business</label>
               <span class="form__info">i</span>
             </li>
             <li class="list__item">
               <input class="visually-hidden form__radio" type="radio" id="ira" name="investor">
-              <label class="form__label-radio" for="ira">IRA</label>
+              <label class="form__label-radio" id="inv" for="ira">IRA</label>
               <span class="form__info">i</span>
             </li>
             <li class="list__item">
               <input class="visually-hidden form__radio" type="radio" id="trust" name="investor">
-              <label class="form__label-radio" for="trust">Trust</label>
+              <label class="form__label-radio" id="tr" for="trust">Trust</label>
               <span class="form__info">i</span>
             </li>
             </ul>
@@ -68,11 +69,11 @@
        <button class="form__submit" type="submit">Create Account</button>
         </form>
       </section>
-      <section class="visually-hidden modal">
+      <div class="visually-hidden modal">
        <p class="modal__description">
-       I am a natural person investing on my own behalf as a sole owner, joint tenant, or a tenant in common. 
+        I am a natural person investing on my own behalf as a sole owner, joint tenant, or a tenant in common.
        </p>
-      </section>
+      </div>
     </main>
   </div>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
