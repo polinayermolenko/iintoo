@@ -34,6 +34,28 @@
   }
 }
 
+.registration__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+@media(min-width: $tablet) {
+  .registration__wrapper {
+    flex-direction: row;
+    padding-bottom: 30px;
+    justify-content: space-between;
+  }
+}
+
+@media(min-width: $desktop) {
+  .registration__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .registration__btn {
   display: inline-block;
   position: relative;
@@ -42,6 +64,7 @@
   width: 70%;
   box-sizing: border-box;
   border: none;
+  cursor: pointer;
   font: inherit;
   font-size: 0.8em;
   text-align: center;
@@ -89,10 +112,12 @@
 .registration__btn:hover,
 .registration__btn:focus {
   opacity: 0.8;
+  font-size: 12px;
 }
 
 .registration__btn:active {
   opacity: 0.5;
+  font-size: 12px;
 }
 
 .registration__option {

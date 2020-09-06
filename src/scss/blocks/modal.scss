@@ -1,8 +1,7 @@
-
 .modal {
     position: absolute;
-    bottom: 20%;
-    right: 10%;
+    /*bottom: 20%;*/
+    /*right: 10%;*/
     width: 190px;
     z-index: 2;
     box-shadow: 
@@ -13,17 +12,17 @@
     background-color: #FFFFFF;
   }
   
-  @media(min-width: 500px) {
-    .modal {
-      bottom: 17%;
-      right: 30%;
-    }
-  }
+  // @media(min-width: 500px) {
+  //   .modal {
+  //     bottom: 17%;
+  //     right: 30%;
+  //   }
+  // }
   
   @media(min-width: $desktop) {
     .modal {
-      bottom: 27%;
-      right: 30%;
+      /*bottom: 27%;
+      right: 30%;*/
       width: 230px;
     }
   }

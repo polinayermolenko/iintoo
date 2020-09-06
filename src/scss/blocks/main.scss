@@ -1,11 +1,11 @@
-.page-main {
+.main {
     width: 100%;
     position: relative;
     background-color: #FFFFFF;
   }
   
   @media(min-width: $tablet) {
-    .page-main {
+    .main {
       width: 50%;
     }
   }

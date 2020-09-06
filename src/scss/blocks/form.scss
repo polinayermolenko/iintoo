@@ -29,6 +29,26 @@
 
 }
 
+.form__input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@media(min-width: $desktop) {
+.form__input-group {
+  flex-direction: row;
+  justify-content: space-between;
+}
+}
+
+.form__input-wrapper {
+  margin-bottom: 10px;
+}
+
 .form__legend {
   text-align: center;
   padding: 0;
@@ -155,8 +175,18 @@
   
   .form__ref {
     text-decoration: underline;
+    cursor: pointer;
     color: #3698FB;
     font-size: 12px;
+  }
+
+  .form__ref:hover,
+  .form__ref:focus {
+    color: #2A4A5C;
+  }
+
+  .form__ref:active {
+    color: #7B8A92;
   }
   
   .form__submit {
@@ -170,6 +200,7 @@
     border: none;
     border-radius: 3px;
     font: inherit;
+    cursor: pointer;
     font-size: 0.8em;
     text-align: center;
     color: #ffffff;
@@ -177,9 +208,16 @@
     outline: none;
   }
   
+  @media(min-width: $tablet) {
+    .form__submit {
+      margin-top: 100px;
+    }
+  }
+
   @media(min-width: $desktop) {
     .form__submit {
       width: 47%;
+      margin-top: 55px;
       padding: 11px 50px;
     }
   }
@@ -187,8 +225,10 @@
   .form__submit:hover,
   .form__submit:focus {
     opacity: 0.8;
+    font-size: 12px;
   }
   
   .form__submit:active {
     opacity: 0.5;
+    font-size: 12px;
   }
